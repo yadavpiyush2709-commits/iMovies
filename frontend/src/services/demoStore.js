@@ -111,7 +111,7 @@ function read(key) {
     return JSON.parse(stored);
   } catch (error) {
     console.error(`Unable to read ${key} from browser storage.`, error);
-    throw new Error("Unable to load saved iMovies data from this browser.");
+    throw new Error("Unable to load saved Tesseract Films data from this browser.");
   }
 }
 

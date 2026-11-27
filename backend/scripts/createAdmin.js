@@ -21,7 +21,7 @@ async function createAdmin() {
   try {
     await connectDatabase();
 
-    console.log("\n=== iMovies Admin Account Setup ===\n");
+    console.log("\n=== Tesseract Films Admin Account Setup ===\n");
 
     const name = (await ask("Admin Name: ")).trim();
     const email = (await ask("Admin Email: ")).trim().toLowerCase();
