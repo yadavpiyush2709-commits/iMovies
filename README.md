@@ -81,8 +81,19 @@ teseractfilms/
 cd backend
 npm install
 Copy-Item .env.example .env
-npm run dev
+cd ..
+npm start
 ```
+
+`npm start` from the repository root starts the backend. The frontend is started separately from `frontend` with `npm run dev`.
+
+Set `MONGODB_URI` in `backend/.env` to your MongoDB Atlas connection string before starting the backend. To add the sample movies to that database, run:
+
+```powershell
+npm run seed:movies
+```
+
+The seed skips movies with matching titles, so it can be safely run again. It adds movie records only; theatres, screens, shows, and seats must be created separately.
 
 ## Frontend Setup
 
